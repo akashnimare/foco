@@ -1,6 +1,8 @@
 #Foco <img src="img/foco.png" width="40">
 
-Foco is a cross-platform desktop app :computer: which runs in menubar. Foco boosts your productivity :rocket: by creating perfect productive environment.
+Foco is a cross-platform desktop app :computer: which runs in menubar. 
+Foco boosts your productivity :rocket: by creating perfect productive environment.
+It has the best sounds for getting work done :raised_hands:.
 
 <br>
 [![](img/image.png)](https://github.com/akashnimare/foco/releases/)
