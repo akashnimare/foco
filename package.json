@@ -1,0 +1,36 @@
+{
+  "name": "foco",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akashnimare/foco"
+  },
+  "scripts": {
+    "build": "electron-packager . Example --platform=darwin --arch=x64 --version=0.36.0 --icon=img/Icon.icns",
+    "start": "electron ."
+  },
+  "keywords": [
+    "electron",
+    "productivity",
+    "focus",
+    "menubar",
+    "menu",
+    "mac",
+    "app"
+  ],
+  "author": "Akash Nimare",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akashnimare/foco"
+  },
+  "homepage": "",
+  "dependencies": {
+    "menubar": "*"
+  },
+  "devDependencies": {
+    "electron-packager": "^5.1.0",
+    "electron-prebuilt": "^0.36.0"
+  }
+}
