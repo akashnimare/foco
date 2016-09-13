@@ -39,6 +39,10 @@ Build installers
 $ npm run build
 ```
 
+## Built with
+- [Electron](https://electron.atom.io)
+- [Menubar](https://github.com/maxogden/menubar)
+
 ## License
 
 MIT - [Akashnimare](http://akashnimare.in)
