@@ -1,5 +1,8 @@
 #Foco <img src="img/foco.png" width="40">
 
+<br>
+[![](img/image.png)](https://github.com/akashnimare/foco/releases/)
+
 ## Installation
 
 Clone the source locally:
