@@ -8,7 +8,13 @@ It has the best sounds for getting work done :raised_hands:.
 [![](img/image.png)](https://github.com/akashnimare/foco/releases/)
 
 ## Installation
+#### :triangular_flag_on_post: Download and drag
 
+[Download the latest version for Mac on the releases page](https://github.com/akashnimare/foco/releases) (and drag into your apps folder.)
+<br>Windows/ubuntu installer coming soon :stuck_out_tongue_closed_eyes:
+
+
+###For developers
 Clone the source locally:
 
 ```sh
