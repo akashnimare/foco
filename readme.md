@@ -48,6 +48,14 @@ Build installers
 $ npm run build
 ```
 
+## Usage
+
+<kbd>Command/ctrl + R</kbd><br>
+Reload.
+
+<kbd>command + q</kbd><br>
+Quit App (while window is open).
+
 ## Built with
 - [Electron](https://electron.atom.io)
 - [Menubar](https://github.com/maxogden/menubar)
