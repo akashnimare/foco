@@ -6,6 +6,7 @@ It has the best sounds for getting work done :raised_hands:.
 
 <br>
 [![](img/image.png)](https://www.youtube.com/watch?v=nuvcs4Kxc-g)
+<img src="https://j.gifs.com/NkJLxz.gif">
 
 ## Installation
 #### :triangular_flag_on_post: Download and drag
