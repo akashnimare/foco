@@ -1,4 +1,7 @@
 #Foco <img src="img/foco.png" width="40">
+[![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)](https://travis-ci.org/akashnimare/foco)
+[![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 Foco is a cross-platform desktop app :computer: which runs in menubar. 
 Foco boosts your productivity :rocket: by creating perfect productive environment.
