@@ -63,6 +63,9 @@ Quit App (while window is open).
 - [Electron](https://electron.atom.io)
 - [Menubar](https://github.com/maxogden/menubar)
 
+## Related
+- [zulip-electron](https://github.com/zulip/zulip-electron)
+
 ## License
 
 MIT - [Akashnimare](http://akashnimare.in)
