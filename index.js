@@ -5,7 +5,7 @@ var mb = menubar({transparent: true, width: 340, height:600, icon: __dirname + '
 
 var template = [
   {
-    label: 'Mojibar',
+    label: 'Foco',
     submenu: [
       {
         label: 'Reload',
