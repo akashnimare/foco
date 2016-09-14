@@ -1,5 +1,7 @@
 var menubar = require('menubar')
-var Menu = require('menu');
+var electron = require('electron')
+var app = electron.app
+var {Menu} = require('electron')
 
 var mb = menubar({transparent: true, width: 340, height:600, icon: __dirname + '/img/Icon.png'})
 

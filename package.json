@@ -1,15 +1,22 @@
 {
-  "name": "foco",
+  "name": "Foco",
   "version": "0.0.2",
+  "productName": "Foco",
   "description": "Stay focused with Foco and boosts productivity 🚀 by creating perfect productive environment.",
-  "main": "index.js",
+  "author": "Akash Nimare",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/akashnimare/foco"
   },
+  "bugs": {
+    "url": "https://github.com/akashnimare/foco/issues"
+  },
+  "main": "index.js",
   "scripts": {
-    "build": "electron-packager . Example --platform=darwin --arch=x64 --version=0.36.0 --icon=img/Icon.icns",
-    "start": "electron ."
+    "test": "xo",
+    "start": "electron .",
+    "build:osx": "electron-packager . Foco --out=dist --ignore=dist --app-version=$npm_package_version --prune --asar --icon=img/Icon.icns --overwrite --platform=darwin --arch=x64 && cd dist/Foco-darwin-x64 && zip -ryXq9 ../Foco-osx-${npm_package_version}.zip Foco.app"
   },
   "keywords": [
     "electron",
@@ -20,17 +27,20 @@
     "mac",
     "app"
   ],
-  "author": "Akash Nimare",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/akashnimare/foco"
-  },
   "homepage": "",
   "dependencies": {
     "menubar": "*"
   },
   "devDependencies": {
-    "electron-packager": "^5.1.0",
-    "electron-prebuilt": "^0.36.0"
-  }
+    "electron-packager": "^7.0.0",
+    "electron": "1.3.3",
+    "xo": "*"
+  },
+    "xo": {
+      "esnext": true,
+      "envs": [
+        "node",
+        "browser"
+      ]
+    }
 }
