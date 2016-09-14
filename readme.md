@@ -51,13 +51,19 @@ Build installers
 $ npm run build
 ```
 
+## Features
+
+- [x] Offline support 
+- [x] Awesome sounds
+- [ ] Auto launch
+- [ ] Auto updates
+
+
 ## Usage
 
-<kbd>Command/ctrl + R</kbd><br>
-Reload.
+<kbd>Command/ctrl + R</kbd> - Reload
 
-<kbd>command + q</kbd><br>
-Quit App (while window is open).
+<kbd>command + q</kbd> - Quit App (while window is open).
 
 ## Built with
 - [Electron](https://electron.atom.io)
