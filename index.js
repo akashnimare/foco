@@ -1,18 +1,21 @@
-var menubar = require('menubar')
-var electron = require('electron')
-var app = electron.app
-var {Menu} = require('electron')
+const path = require('path')
+const menubar = require('menubar')
+const {Menu} = require('electron')
 
-var mb = menubar({transparent: true, width: 340, height:600, icon: __dirname + '/img/Icon.png'})
+const mb = menubar({transparent: true,
+  width: 340,
+  height: 600,
+  icon: path.join(__dirname, '/img/Icon.png')
+})
 
-var template = [
-  {
-    label: 'Foco',
-    submenu: [
-      {
-        label: 'Reload',
-        accelerator: 'CmdOrCtrl+R',
-        click: function (item, focusedWindow) { if (focusedWindow) focusedWindow.reload() }
+const template = [{label: 'Foco',
+    submenu: [{label: 'Reload',
+      accelerator: 'CmdOrCtrl+R',
+      click: (item, focusedWindow) => {
+        if (focusedWindow) {
+          focusedWindow.reload()
+        }
+      }
       },
       {
         label: 'Quit App',
@@ -22,15 +25,16 @@ var template = [
       {
         label: 'Toggle DevTools',
         accelerator: 'Alt+Command+I',
-        click: function () { mb.window.toggleDevTools() }
+        click: () => {
+          mb.window.toggleDevTools()
+        }
       }
     ]
-  }
+   }
 ]
 
-mb.on('ready', function ready () {
-  console.log('app is ready');
-  // Build default menu for text editing and devtools. (gone since electron 0.25.2)
-  var menu = Menu.buildFromTemplate(template)
+mb.on('ready', () => {
+  console.log('app is ready')
+  const menu = Menu.buildFromTemplate(template)
   Menu.setApplicationMenu(menu)
 })

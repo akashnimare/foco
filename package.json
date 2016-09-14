@@ -14,7 +14,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "xo",
+    "test": "standard",
     "start": "electron .",
     "build:osx": "electron-packager . Foco --out=dist --ignore=dist --app-version=$npm_package_version --prune --asar --icon=img/Icon.icns --overwrite --platform=darwin --arch=x64 && cd dist/Foco-darwin-x64 && zip -ryXq9 ../Foco-osx-${npm_package_version}.zip Foco.app"
   },
@@ -27,20 +27,13 @@
     "mac",
     "app"
   ],
-  "homepage": "",
+  "homepage": "http://akashnimare.in",
   "dependencies": {
     "menubar": "*"
   },
   "devDependencies": {
     "electron-packager": "^7.0.0",
     "electron": "1.3.3",
-    "xo": "*"
-  },
-    "xo": {
-      "esnext": true,
-      "envs": [
-        "node",
-        "browser"
-      ]
-    }
+    "standard": "*"
+  }
 }
