@@ -27,7 +27,7 @@ coming soon :stuck_out_tongue_closed_eyes:
 
 *Ubuntu, Debian 8+ (deb package):*
 
-1. Download [Foco-linux.x.x.x.deb][LR]
+1. Download [Foco-linux.x.x.x.deb][FR]
 2. Double click and install, or run `dpkg -i Foco-linux.x.x.x.deb` in the terminal
 3. Start the app with your app launcher or by running `foco` in a terminal
 
