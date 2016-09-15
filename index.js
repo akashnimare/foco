@@ -19,8 +19,8 @@ const template = [{label: 'Foco',
       },
       {
         label: 'Quit App',
-        accelerator: 'Command+Q',
-        selector: 'terminate:'
+        accelerator: 'CmdOrCtrl+Q',
+        role: 'quit'
       },
       {
         label: 'Toggle DevTools',
