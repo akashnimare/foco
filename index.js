@@ -35,6 +35,13 @@ const template = [{label: 'Foco',
 
 mb.on('ready', () => {
   console.log('app is ready')
+
+// setting this manually otherwise it will go in left
+  if (process.platform === 'linux') {
+    mb.setOption('x', 930)
+    mb.setOption('y', 10)
+  }
+
   const menu = Menu.buildFromTemplate(template)
   Menu.setApplicationMenu(menu)
 })
