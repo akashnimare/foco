@@ -12,13 +12,27 @@ It has the best sounds for getting work done :raised_hands:.
 <img src="https://j.gifs.com/NkJLxz.gif">
 
 ## Installation
-#### :triangular_flag_on_post: Download and drag
+[FR]: https://github.com/akashnimare/foco/releases
 
-[Download the latest version for Mac on the releases page](https://github.com/akashnimare/foco/releases) (and drag into your apps folder.)
-<br>Windows/ubuntu installer coming soon :stuck_out_tongue_closed_eyes:
+### OS X
+
+1. Download [Foco-osx.x.x.x.dmg][FR] or [Foco-osx.x.x.x.zip][FR]
+2. Open or unzip the file and drag the app into the `Applications` folder
+3. Done!
+
+### Windows
+coming soon :stuck_out_tongue_closed_eyes:
+
+### Linux
+
+*Ubuntu, Debian 8+ (deb package):*
+
+1. Download [Foco-linux.x.x.x.deb][LR]
+2. Double click and install, or run `dpkg -i Foco-linux.x.x.x.deb` in the terminal
+3. Start the app with your app launcher or by running `foco` in a terminal
 
 
-###For developers
+### For developers
 Clone the source locally:
 
 ```sh
