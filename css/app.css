@@ -204,3 +204,17 @@ input[type="checkbox"]:checked+label span {
 .icon {
     float: left;
 }
+.close {
+    background: transparent url('../img/close.png') no-repeat 4px 4px;
+    background-size: 24px 24px;
+    cursor: pointer;
+    display: inline-block;
+    height: 32px;
+    position: fixed;
+    right: 6px;
+    text-indent: -10000px;
+    top: 15px;
+    width: 32px;
+    z-index: 1;
+    -webkit-app-region: no-drag;
+}
