@@ -67,7 +67,8 @@ $ npm run build
 
 ## Features
 
-- [x] Offline support 
+- [x] Offline support
+- [x] Cross-platform
 - [x] Awesome sounds
 - [ ] Auto launch
 - [ ] Auto updates
