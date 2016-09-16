@@ -9,7 +9,7 @@ It has the best sounds for getting work done :raised_hands:.
 
 <br>
 [![](img/image.jpg)](https://www.youtube.com/watch?v=6SG2Mjpv8YE)
-<img src="https://j.gifs.com/NkJLxz.gif">
+<img src="https://j.gifs.com/BBqE8Y.gif">
 
 ## Installation
 [FR]: https://github.com/akashnimare/foco/releases
