@@ -100,8 +100,9 @@ body {
 }
 ul {
     list-style-type: none;
-    margin: 0;
+    margin-left: -60px;
     padding: 0
+    margin-top:-20px;
 }
 li {
     float: left;
@@ -109,17 +110,13 @@ li {
     padding: 26px 50px;
     text-align: center;
 }
-li div {
-    /*margin: 1.125em 0*/
-}
+
 h2 {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: -15px 0 9px;
     font-size: 17px;
     color: #77bf90;
     text-transform: uppercase;
-    /* text-shadow: 0 1px 1px #5f5f5f; */
-
     float: left;
     width: 35%;
     text-align: left;
@@ -182,7 +179,7 @@ input[type="checkbox"]:checked+label span {
     left: 28px;
 }
 .arrow {
-    position: relative;
+    position: fixed;
     padding: 12px 0;
     background: transparent;
 }
@@ -193,15 +190,15 @@ input[type="checkbox"]:checked+label span {
     border-width: 0 8px 12px 8px;
     border-style: solid;
     border-color: transparent transparent black transparent;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
 }
 .darwin.page {
-    border-radius: 5px;
+/*    border-radius: 5px;
     box-shadow: 0 5px 24px rgba(0, 0, 0, 0.7);
-    overflow: hidden;
+    overflow: hidden;*/
 }
 .icon {
     float: left;

@@ -3,8 +3,8 @@ const menubar = require('menubar')
 const {Menu} = require('electron')
 
 const mb = menubar({transparent: true,
-  width: 330,
-  height: 500,
+  width: 300,
+  height: 530,
   icon: path.join(__dirname, '/img/Icon.png')
 })
 
