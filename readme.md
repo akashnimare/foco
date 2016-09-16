@@ -1,7 +1,16 @@
-#Foco <img src="img/foco.png" width="48px">
 [![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)](https://travis-ci.org/akashnimare/foco)
 [![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+
+<h1 align="center">
+  <br>
+  <img src="https://raw.githubusercontent.com/akashnimare/electron.atom.io/debad730ec42f179db97a51c6f77f3208b2e597e/images/apps/foco.png" alt="Foco" width="160">
+  <br>
+  Foco
+  <br>
+</h1>
+
+<h4 align="center">A menubar/taskbar Gmail App based on <a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
 
 Foco is a cross-platform desktop app :computer: which runs in menubar. 
 Foco boosts your productivity :rocket: by creating perfect productive environment.
