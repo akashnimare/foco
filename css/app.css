@@ -10,6 +10,7 @@ audio:not([controls]) {
 /**
 Set box-sizing to border-box for all elements by default. This makes it
 easier to ensure widths when adding padding and borders. */
+
 html {
     box-sizing: border-box;
     font-family: sans-serif;
@@ -89,7 +90,7 @@ body {
     background-size: cover
 }
 #switchbox {
-    background-color: #555;
+    background-color: #373a47;
     float: left;
     width: 400px;
     padding: 10px 0;
@@ -106,21 +107,22 @@ li {
     float: left;
     margin: 0;
     padding: 26px 50px;
-    text-align: center
+    text-align: center;
 }
 li div {
-    margin: 1.125em 0
+    /*margin: 1.125em 0*/
 }
 h2 {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    margin: 0 0 15px;
-    font-size: 1.2em;
-    color: #202020;
+    margin: -15px 0 9px;
+    font-size: 17px;
+    color: #77bf90;
     text-transform: uppercase;
-    text-shadow: 0 1px 1px #5f5f5f;
+    /* text-shadow: 0 1px 1px #5f5f5f; */
+
     float: left;
     width: 35%;
-    text-align: left
+    text-align: left;
 }
 h3 {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -141,8 +143,8 @@ label {
     display: block;
     position: relative;
     text-indent: 100%;
-    width: 70px;
-    height: 32.3px;
+    width: 60px;
+    height: 29.3px;
     -webkit-transition: background-position .3s ease;
     -moz-transition: background-position .3s ease;
     cursor: pointer;
@@ -162,10 +164,10 @@ label span {
     content: "";
     display: block;
     position: absolute;
-    top: -2px;
+    top: -3px;
     left: -1px;
-    width: 28px;
-    height: 28px;
+    width: 26px;
+    height: 26px;
     -webkit-transition: left .3s ease;
     -moz-transition: left .3s ease;
     transition: all .2s ease;
@@ -177,7 +179,7 @@ input[type="checkbox"]:checked+label {
     background: #77bf90;
 }
 input[type="checkbox"]:checked+label span {
-    left: 40px
+    left: 28px;
 }
 .arrow {
     position: relative;
@@ -217,4 +219,7 @@ input[type="checkbox"]:checked+label span {
     width: 32px;
     z-index: 1;
     -webkit-app-region: no-drag;
+}
+h3 {
+    display: none;
 }

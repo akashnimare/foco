@@ -10,7 +10,7 @@
 
 <h4 align="center">A desktop menubar app based on <a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
 
-Foco is a cross-platform desktop app :computer: which runs in menubar. 
+Foco is a cross-platform desktop app :computer: which runs in menubar.
 Foco boosts your productivity :rocket: by creating perfect productive environment.
 It has the best sounds for getting work done :raised_hands:.
 
@@ -66,7 +66,7 @@ Start the app:
 $ npm start
 ```
 
-Build installers  
+Build installers
 
 ```sh
 $ npm run build

@@ -1,10 +1,10 @@
 const a = document.getElementsByTagName('input')
 
-for (var i = 0; i < a.length; i++) {
+for (let i = 0; i < a.length; i++) {
   let b = a[i].type
   if (b === 'checkbox') {
     a[i].onclick = function (e) {
-      var t = this.checked === true
+      let t = this.checked === true
       document.getElementById(this.value)[t ? 'play' : 'pause']()
       // eslint-disable-next-line
       this.checked = t ? true : false

@@ -3,8 +3,8 @@ const menubar = require('menubar')
 const {Menu} = require('electron')
 
 const mb = menubar({transparent: true,
-  width: 340,
-  height: 600,
+  width: 330,
+  height: 500,
   icon: path.join(__dirname, '/img/Icon.png')
 })
 
@@ -34,7 +34,7 @@ const template = [{label: 'Foco',
 ]
 
 mb.on('ready', () => {
-  console.log('app is ready')
+  console.log('Foco is ready to boost your productivity')
 
 // setting this manually otherwise it will go in left
   if (process.platform === 'linux') {

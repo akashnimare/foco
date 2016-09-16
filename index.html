@@ -89,13 +89,15 @@
 </div>
 <script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript">
-	const {remote} = require('electron');
+// Quit app on clicking close button
 
+	const {remote} = require('electron');
 	const prefWindow = remote.getCurrentWindow();
 
 	document.getElementById('close-button').addEventListener('click', () => {
 	  prefWindow.close();
 	});
+
 </script>
 </body>
 </html>
