@@ -77,6 +77,7 @@ $ npm run build
 - [x] Offline support
 - [x] Cross-platform
 - [x] Awesome sounds
+- [x] No singup/login required
 - [ ] Auto launch
 - [ ] Auto updates
 
