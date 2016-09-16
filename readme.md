@@ -15,7 +15,7 @@ Foco boosts your productivity :rocket: by creating perfect productive environmen
 It has the best sounds for getting work done :raised_hands:.
 
 <br>
-[![](img/image.jpg)](https://www.youtube.com/watch?v=6SG2Mjpv8YE)
+[![](https://cloud.githubusercontent.com/assets/2263909/18597112/0622a3b0-7c6a-11e6-897d-13f0aa36b6e4.png)](https://www.youtube.com/watch?v=6SG2Mjpv8YE)
 <img src="https://j.gifs.com/BBqE8Y.gif">
 
 ## Installation
