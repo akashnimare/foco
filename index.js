@@ -2,10 +2,24 @@ const path = require('path')
 const menubar = require('menubar')
 const {Menu} = require('electron')
 
+const APP_ICON = path.join(__dirname, '/img', 'Icon')
+
+const iconPath = () => {
+  if (process.platform === 'linux') {
+    return APP_ICON + 'linux.png'
+  }
+  if (process.platform === 'darwin') {
+    return APP_ICON + '.png'
+  }
+  if (process.platform === 'win32') {
+    return APP_ICON + '.ico'
+  }
+}
+
 const mb = menubar({transparent: true,
   width: 300,
   height: 530,
-  icon: path.join(__dirname, '/img/Icon.png')
+  icon: iconPath()
 })
 
 const template = [{label: 'Foco',
@@ -38,7 +52,7 @@ mb.on('ready', () => {
 
 // setting this manually otherwise it will go in left
   if (process.platform === 'linux') {
-    mb.setOption('x', 930)
+    mb.setOption('x', 946)
     mb.setOption('y', 10)
   }
 
