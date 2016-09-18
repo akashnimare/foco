@@ -66,10 +66,14 @@ Start the app:
 $ npm start
 ```
 
-Build installers
+### Build installers
 
+Build app for OSX
 ```sh
 $ npm run build:osx
+```
+Build app for Linux
+```sh
 $ npm run build:linux
 ```
 
