@@ -1,6 +1,6 @@
 {
   "name": "Foco",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "productName": "Foco",
   "description": "Stay focused with Foco and boosts productivity 🚀 by creating perfect productive environment.",
   "author": "Akash Nimare",
@@ -17,8 +17,10 @@
     "test": "standard",
     "start": "electron .",
     "build:dmg" : "electron-installer-dmg ./dist/Foco-darwin-x64/Foco.app ./dist/Foco-$npm_package_version",
+    "build:deb": "electron-installer-debian --src dist/Foco-linux-x64 --dest dist/Foco-$npm_package_version --arch amd64",
     "clean":"rm -Rf ./dist",
-    "build:osx": "npm run clean && electron-packager . Foco --out=dist --ignore=dist --app-version=$npm_package_version --prune --asar --icon=img/Icon.icns --overwrite --platform=darwin --arch=x64 && cd dist/Foco-darwin-x64 && npm run build:dmg && zip -ryXq9 ../Foco-osx-${npm_package_version}.zip Foco.app"
+    "build:osx": "npm run clean && electron-packager . Foco --out=dist --ignore=dist --app-version=$npm_package_version --prune --asar --icon=img/Icon.icns --overwrite --platform=darwin --arch=x64 && cd dist/Foco-darwin-x64 && npm run build:dmg && zip -ryXq9 ../Foco-osx-${npm_package_version}.zip Foco.app",
+    "build:linux": "npm run clean && electron-packager . Foco --out=dist --ignore=dist --app-version=$npm_package_version --prune --asar --icon=img/Iconlinux.png --overwrite --platform=linux --arch=x64 && npm run build:deb"
   },
   "keywords": [
     "electron",
@@ -35,7 +37,8 @@
   },
   "devDependencies": {
     "electron-packager": "^7.0.0",
-    "electron-installer-dmg":"*",
+    "electron-installer-dmg": "*",
+    "electron-installer-debian": "*",
     "electron": "1.3.3",
     "standard": "*"
   }
