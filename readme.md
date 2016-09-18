@@ -69,7 +69,8 @@ $ npm start
 Build installers
 
 ```sh
-$ npm run build
+$ npm run build:osx
+$ npm run build:linux
 ```
 
 ## Features
