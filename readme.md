@@ -102,4 +102,4 @@ $ npm run build:linux
 
 ## License
 
-MIT - [Akashnimare](http://akashnimare.in)
+MIT  © [Akash Nimare](http://akashnimare.in)
