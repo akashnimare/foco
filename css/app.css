@@ -1,57 +1,54 @@
-audio {
-    display: inline-block;
-    display: inline;
-    zoom: 1
-}
-audio:not([controls]) {
-    display: none;
-    height: 0
-}
 /**
 Set box-sizing to border-box for all elements by default. This makes it
 easier to ensure widths when adding padding and borders. */
 
 html {
     box-sizing: border-box;
-    font-family: sans-serif;
-    -webkit-text-size-adjust: 100%;
+    -webkit-box-sizing: border-box;
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -webkit-user-select: none;  /* disable text highlighting as suggested by sindresorhus*/
+    -webkit-user-select: none;  /* disable text highlighting as suggested by sindresorhus */
 }
 *,
 *::before,
 *::after {
     box-sizing: inherit;
+    -webkit-box-sizing: inherit;
 }
-html,
-input {
-    font-family: sans-serif
-}
+
 body {
-    margin: 0
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    background: #fff;
+    -webkit-background-size: cover;
+    background-size: cover;
+    font-size: 1em;
+    line-height: 1.4
 }
 ::-webkit-scrollbar {
     display: none;
 }
+
 h2 {
-    font-size: 1.2em;
-    margin: .83em 0
+   margin: -15px 0 9px;
+   font-size: 19px;
+   color: #77bf90;
+   float: left;
 }
+
 ul {
-    margin: 1em 0
-}
-ul {
+    margin: 1em 0;
     padding: 0 0 0 40px
+}
+
+li:first-child {
+    margin-top:-10px;
 }
 input {
     font-size: 100%;
     margin: 0;
     vertical-align: baseline;
-    vertical-align: middle
-}
-input {
+    vertical-align: middle;
     line-height: normal
 }
 input[type="checkbox"] {
@@ -60,36 +57,10 @@ input[type="checkbox"] {
     height: 13px;
     width: 13px
 }
-input::-moz-focus-inner {
-    border: 0;
-    padding: 0
-}
 .clear {
     clear: both
 }
-html,
-input {
-    color: #222
-}
-body {
-    font-size: 1em;
-    line-height: 1.4
-}
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none
-}
-::selection {
-    background: #b3d4fc;
-    text-shadow: none
-}
-body {
-    background: #fff;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover
-}
+
 #switchbox {
     background-color: #373a47;
     float: left;
@@ -112,28 +83,6 @@ li {
     text-align: center;
 }
 
-h2 {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    margin: -15px 0 9px;
-    font-size: 17px;
-    color: #77bf90;
-    text-transform: uppercase;
-    float: left;
-    width: 35%;
-    text-align: left;
-}
-h3 {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    margin: 5px 0 0;
-    font-size: 1em;
-    color: #202020;
-    text-transform: uppercase;
-    text-shadow: 0 1px 1px #5f5f5f;
-    float: left;
-    width: 65%;
-    text-align: center;
-    display: block
-}
 label {
     color: transparent;
     border-radius: 14px;
@@ -179,6 +128,15 @@ input[type="checkbox"]:checked+label {
 input[type="checkbox"]:checked+label span {
     left: 28px;
 }
+audio {
+    display: inline-block;
+    display: inline;
+    zoom: 1
+}
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
 .arrow {
     position: fixed;
     padding: 12px 0;
@@ -196,14 +154,6 @@ input[type="checkbox"]:checked+label span {
     left: 50%;
     transform: translateX(-50%);
 }
-.darwin.page {
-/*    border-radius: 5px;
-    box-shadow: 0 5px 24px rgba(0, 0, 0, 0.7);
-    overflow: hidden;*/
-}
-.icon {
-    float: left;
-}
 .close {
     background: transparent url('../img/close.png') no-repeat 4px 4px;
     background-size: 24px 24px;
@@ -217,7 +167,4 @@ input[type="checkbox"]:checked+label span {
     width: 32px;
     z-index: 1;
     -webkit-app-region: no-drag;
-}
-h3 {
-    display: none;
 }
