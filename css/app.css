@@ -18,6 +18,7 @@ html {
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+    -webkit-user-select: none;  /* disable text highlighting as suggested by sindresorhus*/
 }
 *,
 *::before,
