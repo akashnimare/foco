@@ -7,7 +7,8 @@ html {
     -webkit-box-sizing: border-box;
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
-    -webkit-user-select: none;  /* disable text highlighting as suggested by sindresorhus */
+    -webkit-user-select: none;
+    /* disable text highlighting as suggested by sindresorhus */
 }
 *,
 *::before,
@@ -15,7 +16,6 @@ html {
     box-sizing: inherit;
     -webkit-box-sizing: inherit;
 }
-
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
@@ -28,22 +28,20 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
-
 h2 {
-   margin: -15px 0 9px;
-   font-size: 19px;
-   color: #77bf90;
-   float: left;
+    margin: -15px 0 9px;
+    font-size: 19px;
+    color: #77bf90;
+    float: left;
 }
 ul {
     list-style-type: none;
     margin-left: -60px;
-    padding: 0
-    margin-top:-20px;
+    padding: 0 margin-top: -20px;
 }
 li:first-child {
-    border-top:none;
-    margin-top:-10px;
+    border-top: none;
+    margin-top: -10px;
 }
 li {
     float: left;
@@ -52,7 +50,6 @@ li {
     text-align: center;
     border-top: 1px solid #000;
 }
-
 input {
     font-size: 100%;
     margin: 0;
@@ -66,6 +63,21 @@ input[type="checkbox"] {
     height: 13px;
     width: 13px
 }
+input[type="range"] {
+    float: left;
+    width: 155px;
+    margin: 5px 0 0 20px
+}
+input[type="checkbox"] {
+    display: none
+}
+input[type="checkbox"]:checked+label {
+    background-position: 0 0;
+    background: #77bf90;
+}
+input[type="checkbox"]:checked+label span {
+    left: 28px;
+}
 .clear {
     clear: both
 }
@@ -78,7 +90,6 @@ input[type="checkbox"] {
     border: 1px solid #202020;
     box-shadow: inset 0 1px 3px rgba(255, 255, 255, .1), 0 3px 5px rgba(0, 0, 0, .1)
 }
-
 label {
     color: transparent;
     border-radius: 14px;
@@ -94,14 +105,6 @@ label {
     font-size: .01em;
     float: left;
 }
-input[type="range"] {
-    float: left;
-    width: 155px;
-    margin: 5px 0 0 20px
-}
-input[type="checkbox"] {
-    display: none
-}
 label span {
     background: #fff;
     content: "";
@@ -116,13 +119,6 @@ label span {
     transition: all .2s ease;
     border: 4px solid #f2f2f2;
     border-radius: 2em;
-}
-input[type="checkbox"]:checked+label {
-    background-position: 0 0;
-    background: #77bf90;
-}
-input[type="checkbox"]:checked+label span {
-    left: 28px;
 }
 audio {
     display: inline-block;
@@ -162,5 +158,4 @@ audio:not([controls]) {
     top: 15px;
     width: 32px;
     z-index: 1;
-    -webkit-app-region: no-drag;
 }
