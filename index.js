@@ -59,3 +59,17 @@ mb.on('ready', () => {
   const menu = Menu.buildFromTemplate(template)
   Menu.setApplicationMenu(menu)
 })
+
+//right click menu for Tray
+mb.on('after-create-window', function() {
+    const contextMenu = Menu.buildFromTemplate ([
+        {
+            label: 'Quit', click: () => {
+            mb.app.quit ();
+        }
+        }
+    ])
+    mb.tray.on ('right-click', () => {
+        mb.tray.popUpContextMenu (contextMenu);
+    })
+});
