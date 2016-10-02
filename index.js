@@ -63,7 +63,7 @@ mb.on('ready', () => {
 //right click menu for Tray
 mb.on('after-create-window', function() {
     const contextMenu = Menu.buildFromTemplate ([
-      {label: 'restart app', click: () => { mb.app.quit();app.relaunch(); }},
+      {label: 'restart app', click: () => { mb.app.quit();mb.app.relaunch(); }},
       {type: 'separator'},
       {label: 'Quit', click: () => {mb.app.quit ();}}
     ])
