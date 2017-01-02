@@ -5,7 +5,7 @@
 
 <h1 align="center">
   <br>
-  <img src="https://raw.githubusercontent.com/akashnimare/electron.atom.io/debad730ec42f179db97a51c6f77f3208b2e597e/images/apps/foco.png" alt="Foco" width="160">
+  <img src="https://github.com/akashnimare/foco/blob/master/img/foco.png" alt="Foco" width="160">
 </h1>
 
 <h4 align="center">A desktop menubar app based on <a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
