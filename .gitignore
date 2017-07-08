@@ -3,3 +3,4 @@ node_modules
 *.app
 dist
 Plugin.sketch
+yarn.lock
