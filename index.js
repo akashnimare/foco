@@ -2,7 +2,7 @@ const path = require('path')
 const menubar = require('menubar')
 const {Menu} = require('electron')
 
-const APP_ICON = path.join(__dirname, '/img', 'Icon')
+const APP_ICON = path.join(__dirname, '/build', 'icon')
 
 const iconPath = () => {
   if (process.platform === 'linux') {
