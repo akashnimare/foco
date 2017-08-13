@@ -1,17 +1,70 @@
-const a = document.getElementsByTagName('input')
+const domSounds = document.getElementsByTagName('ul')[0].children;
 
-for (let i = 0; i < a.length; i++) {
-  let b = a[i].type
-  if (b === 'checkbox') {
-    a[i].onclick = function (e) {
-      let t = this.checked === true
-      document.getElementById(this.value)[t ? 'play' : 'pause']()
-      // eslint-disable-next-line
-      this.checked = t ? true : false
-    }
-  } else if (b === 'range') {
-    a[i].onchange = function (e) {
-      document.getElementById(this.parentNode.children[0].value).volume = this.value / 100
-    }
-  }
+Object.prototype.extend = function (extension) {
+	var object = Object.create(this);
+	for (var property in extension) {
+		if (extension.hasOwnProperty(property) || object[property] === 'undefined') {
+			object[property] = extension[property];
+		}
+	}
+	return object;
+};
+
+var Sound = {
+	create(switchEl, volumeEl, audioEl) {
+		const newObj = this.extend({
+			switchEl: switchEl,
+			volumeEl: volumeEl,
+			audioEl: audioEl,
+			isPlaying: false
+		});
+
+		newObj.switchEl.addEventListener('click', newObj.toggle.bind(newObj));
+		newObj.volumeEl.onchange = newObj.adjustVolume.bind(newObj);
+
+		return newObj;
+	},
+	toggle() {
+		console.log('toggle fired');
+		if (this.isPlaying)	{
+			this.pause();
+		}	else			{
+			this.play();
+		}
+
+		this.isPlaying = !this.isPlaying;
+	},
+	pause() {
+		this.audioEl.stop;
+		this.switchEl.checked = false;
+		this.audioEl.pause();
+	},
+	play() {
+		console.log('start');
+		this.switchEl.checked = true;
+		this.audioEl.play();
+	},
+	adjustVolume(e) {
+		console.log('volume adjusted');
+		this.audioEl.volume = this.volumeEl.value / 100;
+	}
+};
+
+const sounds = [];
+
+Array.from(domSounds).forEach(domSound => {
+	sounds.push(Sound.create(
+		domSound.children[3].children[0],
+		domSound.children[3].children[2],
+		domSound.children[2]
+	 ));
+});
+
+function pauseAll() {
+	sounds.forEach(sound => sound.pause());
 }
+
+function playAll() {
+	sounds.forEach(sound => sound.play());
+}
+
