@@ -14,8 +14,12 @@ Foco is a cross-platform desktop app :computer: which runs in menubar.
 Foco boosts your productivity :rocket: by creating perfect productive environment.
 It has the best sounds for getting work done :raised_hands:.
 
+# Demo
+👉 Watch it <a href="https://www.youtube.com/watch?v=6SG2Mjpv8YE">here</a>.
 <br>
-[![](https://cloud.githubusercontent.com/assets/2263909/18597112/0622a3b0-7c6a-11e6-897d-13f0aa36b6e4.png)](https://www.youtube.com/watch?v=6SG2Mjpv8YE)
+
+[![Watch demo](https://cloud.githubusercontent.com/assets/2263909/18597112/0622a3b0-7c6a-11e6-897d-13f0aa36b6e4.png)](https://www.youtube.com/watch?v=6SG2Mjpv8YE)
+
 <img src="https://j.gifs.com/BBqE8Y.gif">
 
 ## Installation
