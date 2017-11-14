@@ -167,7 +167,7 @@ audio:not([controls]) {
 }
 
 .close {
-    background: transparent url('../img/closee.png') no-repeat 4px 4px;
+    background: transparent url('../img/close.png') no-repeat 4px 4px;
     background-size: 24px 24px;
     cursor: pointer;
     display: inline-block;

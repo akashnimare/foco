@@ -26,13 +26,11 @@ var Sound = {
 	},
 	toggle() {
 		console.log('toggle fired');
-		console.log('yo playing', this.isPlaying);
 		if (this.isPlaying) {
 			this.pause();
 		} else {
 			this.play();
 		}
-
 		this.isPlaying = !this.isPlaying;
 	},
 	pause() {
@@ -40,7 +38,6 @@ var Sound = {
 		this.switchEl.checked = false;
 		this.audioEl.pause();
 		console.log('stop');
-
 	},
 	play() {
 		console.log('start');
