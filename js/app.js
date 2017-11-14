@@ -26,9 +26,10 @@ var Sound = {
 	},
 	toggle() {
 		console.log('toggle fired');
-		if (this.isPlaying)	{
+		console.log('yo playing', this.isPlaying);
+		if (this.isPlaying) {
 			this.pause();
-		}	else			{
+		} else {
 			this.play();
 		}
 
@@ -38,11 +39,13 @@ var Sound = {
 		this.audioEl.stop;
 		this.switchEl.checked = false;
 		this.audioEl.pause();
+		console.log('stop');
+
 	},
 	play() {
 		console.log('start');
 		this.switchEl.checked = true;
-		this.audioEl.play();
+		this.audioEl.play("hello", this.switchEl.checked);
 	},
 	adjustVolume(e) {
 		console.log('volume adjusted');
@@ -57,14 +60,13 @@ Array.from(domSounds).forEach(domSound => {
 		domSound.children[3].children[0],
 		domSound.children[3].children[2],
 		domSound.children[2]
-	 ));
+	));
 });
 
-function pauseAll() {
+const pauseAll = () => {
 	sounds.forEach(sound => sound.pause());
 }
 
-function playAll() {
+const playAll = () => {
 	sounds.forEach(sound => sound.play());
 }
-

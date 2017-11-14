@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-		<link rel="stylesheet" href="css/app.css">
-	</head>
-	<body class="arrow">
-		<div class="container">
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="css/app.css">
+	<style>
+
+	</style>
+</head>
+
+<body class="arrow">
+	<div class="container">
+		<div class="control-section">
+			<label class="switch">
+				<div id="mute-button" class="on"></div>
+			</label>
 			<div class="close" id="close-button">Close</div>
-			<ul>
-				<li>
+
+		</div>
+
+		<div class="player-section">
+
+			<ul class="player">
+				<li class="cafe">
 					<h2>Cafe</h2>
 					<div class="clear"></div>
 					<audio id="cafe" loop>
@@ -17,12 +31,14 @@
 					</audio>
 					<div>
 						<input id="cafeToggle" type="checkbox" value="cafe">
-						<label for="cafeToggle"><span>Toggle Audio</span></label>
+						<label for="cafeToggle">
+							<span>Toggle Audio</span>
+						</label>
 						<input max="100" min="0" step="1" type="range" value="100">
 						<div class="clear"></div>
 					</div>
 				</li>
-				<li>
+				<li class="rain">
 					<h2>Rain</h2>
 					<div class="clear"></div>
 					<audio id="rain" loop>
@@ -30,11 +46,13 @@
 					</audio>
 					<div>
 						<input id="rainToggle" type="checkbox" value="rain">
-						<label for="rainToggle"><span>Toggle Audio</span></label>
+						<label for="rainToggle">
+							<span>Toggle Audio</span>
+						</label>
 						<input max="100" min="0" step="1" type="range" value="100">
 					</div>
 				</li>
-				<li>
+				<li class="fire">
 					<h2>Fire</h2>
 					<div class="clear"></div>
 					<audio id="Fire" loop>
@@ -42,11 +60,13 @@
 					</audio>
 					<div>
 						<input id="FireToggle" type="checkbox" value="Fire">
-						<label for="FireToggle"><span>Toggle Audio</span></label>
+						<label for="FireToggle">
+							<span>Toggle Audio</span>
+						</label>
 						<input max="100" min="0" step="1" type="range" value="100">
 					</div>
 				</li>
-				<li>
+				<li class="drops">
 					<h2>Drops</h2>
 					<div class="clear"></div>
 					<audio id="drops" loop>
@@ -54,11 +74,13 @@
 					</audio>
 					<div>
 						<input id="dropsToggle" type="checkbox" value="drops">
-						<label for="dropsToggle"><span>Toggle Audio</span></label>
+						<label for="dropsToggle">
+							<span>Toggle Audio</span>
+						</label>
 						<input max="100" min="0" step="1" type="range" value="100">
 					</div>
 				</li>
-				<li>
+				<li class="night">
 					<h2>Night</h2>
 					<div class="clear"></div>
 					<audio id="night" loop>
@@ -66,20 +88,50 @@
 					</audio>
 					<div>
 						<input id="nightToggle" type="checkbox" value="night">
-						<label for="nightToggle"><span>Toggle Audio</span></label>
+						<label for="nightToggle">
+							<span>Toggle Audio</span>
+						</label>
 						<input max="100" min="0" step="1" type="range" value="100">
 					</div>
 				</li>
 			</ul>
 		</div>
-		<script type="text/javascript" src="js/app.js"></script>
-		<script type="text/javascript">
+	</div>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript">
 		// Quit app on clicking close button
-			const {remote} = require('electron');
-			const prefWindow = remote.getCurrentWindow();
-			document.getElementById('close-button').addEventListener('click', () => {
+		const { remote } = require('electron');
+		const prefWindow = remote.getCurrentWindow();
+
+		prefWindow.webContents.setAudioMuted(false);
+
+		document.getElementById('close-button').addEventListener('click', () => {
 			prefWindow.close();
-			});
-		</script>
-	</body>
+		});
+
+		document.getElementById('mute-button').addEventListener('click', function (e) {
+			let isAudio = this.className;
+
+			if (isAudio === 'off') {
+				this.className = "on";
+				prefWindow.webContents.setAudioMuted(false);
+				console.log("yo")
+			} else {
+				this.className = "off";
+				prefWindow.webContents.setAudioMuted(true);
+				console.log("no")
+			}
+			console.log(prefWindow.webContents.isAudioMuted())
+		});
+
+		function toggleAudio(audio) {
+			if (audio) {
+				prefWindow.webContents.setAudioMuted(false)
+			} else {
+				prefWindow.webContents.setAudioMuted(true)
+			}
+		}
+	</script>
+</body>
+
 </html>
