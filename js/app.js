@@ -1,3 +1,6 @@
+const { remote } = require('electron');
+
+// Build Player section
 const domSounds = document.getElementsByTagName('ul')[0].children;
 
 Object.prototype.extend = function (extension) {
@@ -66,4 +69,39 @@ const pauseAll = () => {
 
 const playAll = () => {
 	sounds.forEach(sound => sound.play());
+}
+
+
+const prefWindow = remote.getCurrentWindow();
+const closeButton = document.getElementById('close-button');
+const muteButton = document.getElementById('mute-button')
+const setAudio = prefWindow.webContents.setAudioMuted;
+
+// Set Audio to true on app load
+setAudio(false);
+
+// Quit app on clicking close button
+closeButton.addEventListener('click', () => {
+	prefWindow.close();
+});
+
+muteButton.addEventListener('click', function (e) {
+	var isAudio = this.className;
+	if (isAudio === 'off') {
+		this.className = "on";
+		this.title = "mute";
+		setAudio(false);
+	} else {
+		this.className = "off";
+		this.title = "unmute";
+		setAudio(true);
+	}
+});
+
+const toggleAudio = (audio) => {
+	if (audio) {
+		setAudio(false)
+	} else {
+		setAudio(true)
+	}
 }
