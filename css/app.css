@@ -10,12 +10,14 @@ html {
     -webkit-user-select: none;
     /* disable text highlighting as suggested by sindresorhus */
 }
+
 *,
 *::before,
 *::after {
     box-sizing: inherit;
     -webkit-box-sizing: inherit;
 }
+
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
@@ -25,24 +27,30 @@ body {
     font-size: 1em;
     line-height: 1.4
 }
+
 ::-webkit-scrollbar {
     display: none;
 }
+
 h2 {
     margin: -15px 0 9px;
     font-size: 19px;
     color: #77bf90;
     float: left;
 }
+
 ul {
     list-style-type: none;
-    margin-left: -60px;
-    padding: 0 margin-top: -20px;
+    margin-left: -20px;
+    padding: 0;
+    margin-top: -20px;
 }
+
 li:first-child {
     border-top: none;
     margin-top: -10px;
 }
+
 li {
     float: left;
     margin: 0;
@@ -50,47 +58,53 @@ li {
     text-align: center;
     border-top: 1px solid #000;
 }
-input {
+
+.player input {
     font-size: 100%;
     margin: 0;
     vertical-align: baseline;
     vertical-align: middle;
     line-height: normal
 }
-input[type="checkbox"] {
+
+.player input[type="checkbox"] {
     box-sizing: border-box;
     padding: 0;
     height: 13px;
     width: 13px
 }
-input[type="range"] {
+
+.player input[type="range"] {
     float: left;
     width: 155px;
-    margin: 5px 0 0 20px
+    margin: 5px 0 0 20px;
 }
-input[type="checkbox"] {
-    display: none
+
+.player input[type="checkbox"] {
+    display: none;
 }
-input[type="checkbox"]:checked+label {
+
+.player input[type="checkbox"]:checked+label {
     background-position: 0 0;
-    background: #77bf90;
+    background: rgba(0,0,0,0.9);
 }
-input[type="checkbox"]:checked+label span {
+
+.player input[type="checkbox"]:checked+label span {
     left: 28px;
 }
+
 .clear {
     clear: both
 }
+
 .container {
     background-color: #373a47;
-    float: left;
-    width: 400px;
-    padding: 10px 0;
     text-align: center;
     border: 1px solid #202020;
     box-shadow: inset 0 1px 3px rgba(255, 255, 255, .1), 0 3px 5px rgba(0, 0, 0, .1)
 }
-label {
+
+.player label {
     color: transparent;
     border-radius: 14px;
     border: 4.1px solid #f2f2f2;
@@ -105,7 +119,8 @@ label {
     font-size: .01em;
     float: left;
 }
-label span {
+
+.player label span {
     background: #fff;
     content: "";
     display: block;
@@ -120,20 +135,24 @@ label span {
     border: 4px solid #f2f2f2;
     border-radius: 2em;
 }
+
 audio {
     display: inline-block;
     display: inline;
     zoom: 1
 }
+
 audio:not([controls]) {
     display: none;
     height: 0
 }
+
 .arrow {
     position: fixed;
     padding: 12px 0;
     background: transparent;
 }
+
 .arrow:before {
     content: "";
     height: 0;
@@ -146,6 +165,7 @@ audio:not([controls]) {
     left: 50%;
     transform: translateX(-50%);
 }
+
 .close {
     background: transparent url('../img/close.png') no-repeat 4px 4px;
     background-size: 24px 24px;
@@ -155,7 +175,94 @@ audio:not([controls]) {
     position: fixed;
     right: 6px;
     text-indent: -10000px;
-    top: 15px;
+    top: 16px;
     width: 32px;
+    opacity: 0.9;
     z-index: 1;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.on {
+    background-image: url('../img/mute.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.off {
+    background-image: url('../img/unmute.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.control-section {
+    background: #fff;
+    /* opacity: 0.1; */
+    margin-bottom: 30px;
+}
+
+.cafe {
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../img/cafe.jpg");
+    background-position: center;
+}
+
+.rain {
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/rain.jpg')
+}
+
+.fire {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),  url("../img/fire.jpg");
+    background-position: center;
+
+}
+
+.drops {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),  url("../img/drops.jpg");
+    background-position: center;
+}
+
+.night {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),  url("../img/night.jpeg");
+    background-position: center;
+}
+.player-section {
+    display: block;
 }
