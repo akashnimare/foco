@@ -87,7 +87,7 @@
   },
   "devDependencies": {
     "electron-builder": "19.13.0",
-    "electron": "1.6.11",
+    "electron": "1.7.11",
     "standard": "*"
   }
 }
