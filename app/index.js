@@ -5,15 +5,7 @@ const { Menu } = require("electron");
 const APP_ICON = path.join(__dirname, "resources/icons", "icon");
 
 const iconPath = () => {
-  if (process.platform === "linux") {
-    return APP_ICON + "linux.png";
-  }
-  if (process.platform === "darwin") {
-    return APP_ICON + ".png";
-  }
-  if (process.platform === "win32") {
-    return APP_ICON + ".ico";
-  }
+	return APP_ICON + (process.platform === 'win32' ? '.ico' : '.png');
 };
 
 const mb = menubar({
