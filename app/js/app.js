@@ -81,9 +81,5 @@ muteButton.addEventListener("click", function(e) {
 });
 
 const toggleAudio = audio => {
-  if (audio) {
-    setAudio(false);
-  } else {
-    setAudio(true);
-  }
+  audio ? setAudio(false) : setAudio(true);
 };
