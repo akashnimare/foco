@@ -12,7 +12,8 @@ const mb = menubar({
   transparent: true,
   width: 320,
   height: 580,
-  icon: iconPath()
+  icon: iconPath(),
+  resizable: false
 });
 
 const template = [
