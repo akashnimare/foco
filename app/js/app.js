@@ -1,8 +1,6 @@
 const { remote } = require("electron");
 
 // Build Player section
-const domSounds = document.getElementsByTagName("ul")[0].children;
-
 class Create {
   constructor(switchEl, volumeEl, audioEl) {
     this.switchEl = switchEl;
@@ -34,6 +32,7 @@ class Create {
   }
 }
 
+const domSounds = document.getElementsByTagName("ul")[0].children;
 const sounds = [];
 
 Array.from(domSounds).forEach(domSound => {
@@ -52,6 +51,10 @@ const pauseAll = () => {
 
 const playAll = () => {
   sounds.forEach(sound => sound.play());
+};
+
+const toggleAudio = audio => {
+  audio ? setAudio(false) : setAudio(true);
 };
 
 const prefWindow = remote.getCurrentWindow();
@@ -80,6 +83,4 @@ muteButton.addEventListener("click", function(e) {
   }
 });
 
-const toggleAudio = audio => {
-  audio ? setAudio(false) : setAudio(true);
-};
+
