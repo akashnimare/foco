@@ -16,7 +16,7 @@
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
     "test": "standard",
-    "start": "yarn install && electron .",
+    "start": "yarn install && electron ./app",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
     "clean": "rm -Rf node_modules && rm -Rf ./dist"
