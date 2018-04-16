@@ -86,7 +86,7 @@ li {
 
 .player input[type="checkbox"]:checked+label {
     background-position: 0 0;
-    background: rgba(0,0,0,0.9);
+    background: rgba(0, 0, 0, 0.9);
 }
 
 .player input[type="checkbox"]:checked+label span {
@@ -203,7 +203,6 @@ input:checked+.slider:before {
     transform: translateX(26px);
 }
 
-
 /* Rounded sliders */
 
 .slider.round {
@@ -230,29 +229,30 @@ input:checked+.slider:before {
 }
 
 .cafe {
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../img/cafe.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/cafe.jpg");
     background-position: center;
 }
 
 .rain {
-    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/rain.jpg')
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/rain.jpg')
 }
 
 .fire {
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),  url("../img/fire.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/fire.jpg");
     background-position: center;
-
 }
 
 .drops {
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),  url("../img/drops.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/drops.jpg");
     background-position: center;
 }
 
 .night {
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),  url("../img/night.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/night.jpeg");
     background-position: center;
 }
+
 .player-section {
     display: block;
+    width: 320px;
 }

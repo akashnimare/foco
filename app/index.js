@@ -10,7 +10,7 @@ const iconPath = () => {
 
 const mb = menubar({
   transparent: true,
-  width: 320,
+  width: 316,
   height: 580,
   icon: iconPath(),
   resizable: false
