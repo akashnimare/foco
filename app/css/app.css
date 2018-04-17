@@ -33,10 +33,9 @@ body {
 }
 
 h2 {
-    margin: -15px 0 9px;
-    font-size: 19px;
-    color: #77bf90;
-    float: left;
+    margin: -15px 0 0 10px;
+    font-size: 17px;
+    color: #77b4e8;
 }
 
 ul {
@@ -185,6 +184,7 @@ audio:not([controls]) {
     display: inline-block;
     width: 35px;
     height: 35px;
+    margin-left: -15px;
     cursor: pointer;
 }
 
