@@ -13,85 +13,12 @@
 			<div id="mute-button" class="on" title="mute"></div>
 			<div id="close-button" class="close">Close</div>
 		</div>
-
 		<div class="player-section">
-
-			<ul class="player">
-				<li class="cafe">
-					<h2>Cafe</h2>
-					<div class="clear"></div>
-					<audio id="cafe" loop>
-						<source src="resources/sound/cafe.mp3" type="audio/mpeg">
-					</audio>
-					<div>
-						<input id="cafeToggle" type="checkbox" value="cafe">
-						<label for="cafeToggle">
-							<span>Toggle Audio</span>
-						</label>
-						<input max="100" min="0" step="1" type="range" value="100">
-						<div class="clear"></div>
-					</div>
-				</li>
-				<li class="rain">
-					<h2>Rain</h2>
-					<div class="clear"></div>
-					<audio id="rain" loop>
-						<source src="resources/sound/rain.mp3" type="audio/mpeg">
-					</audio>
-					<div>
-						<input id="rainToggle" type="checkbox" value="rain">
-						<label for="rainToggle">
-							<span>Toggle Audio</span>
-						</label>
-						<input max="100" min="0" step="1" type="range" value="100">
-					</div>
-				</li>
-				<li class="fire">
-					<h2>Fire</h2>
-					<div class="clear"></div>
-					<audio id="Fire" loop>
-						<source src="resources/sound/fire.mp3" type="audio/mpeg">
-					</audio>
-					<div>
-						<input id="FireToggle" type="checkbox" value="Fire">
-						<label for="FireToggle">
-							<span>Toggle Audio</span>
-						</label>
-						<input max="100" min="0" step="1" type="range" value="100">
-					</div>
-				</li>
-				<li class="drops">
-					<h2>Drops</h2>
-					<div class="clear"></div>
-					<audio id="drops" loop>
-						<source src="resources/sound/raindrops.mp3" type="audio/mpeg">
-					</audio>
-					<div>
-						<input id="dropsToggle" type="checkbox" value="drops">
-						<label for="dropsToggle">
-							<span>Toggle Audio</span>
-						</label>
-						<input max="100" min="0" step="1" type="range" value="100">
-					</div>
-				</li>
-				<li class="night">
-					<h2>Night</h2>
-					<div class="clear"></div>
-					<audio id="night" loop>
-						<source src="resources/sound/night.mp3" type="audio/mpeg">
-					</audio>
-					<div>
-						<input id="nightToggle" type="checkbox" value="night">
-						<label for="nightToggle">
-							<span>Toggle Audio</span>
-						</label>
-						<input max="100" min="0" step="1" type="range" value="100">
-					</div>
-				</li>
+			<ul class="player" id="sounds-section">
 			</ul>
 		</div>
 	</div>
+	<script type="text/javascript" src="js/template.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 </body>
-
 </html>

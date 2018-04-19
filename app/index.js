@@ -5,7 +5,7 @@ const { Menu } = require("electron");
 const APP_ICON = path.join(__dirname, "resources/icons", "icon");
 
 const iconPath = () => {
-	return APP_ICON + (process.platform === 'win32' ? '.ico' : '.png');
+  return APP_ICON + (process.platform === "win32" ? ".ico" : ".png");
 };
 
 const mb = menubar({

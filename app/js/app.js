@@ -82,5 +82,3 @@ muteButton.addEventListener("click", function(e) {
     setAudio(true);
   }
 });
-
-
